@@ -2,4 +2,71 @@ h1 {
     color: red;
     text-align: center;
     font-family: Arial, sans-serif;
+}
+
+/* Calendar Styles */
+#calendar {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.calendar-header h2 {
+    color: #333;
+    margin: 0;
+    font-size: 24px;
+}
+
+.week-header {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.day-name {
+    text-align: center;
+    font-weight: bold;
+    color: #666;
+    padding: 10px 0;
+    background-color: #e8e8e8;
+    border-radius: 5px;
+}
+
+.days-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.day {
+    text-align: center;
+    padding: 15px 0;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.day:hover {
+    background-color: #e8f4f8;
+}
+
+.day.empty {
+    background-color: transparent;
+    cursor: default;
+}
+
+.day.today {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
 } 
